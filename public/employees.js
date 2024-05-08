@@ -1,11 +1,2 @@
-let sally = 'Sally Smith';
-let mark = 'Mark Martin';
-let holly = 'Holly Unlikely';
-let amol = 'Amol Shookup';
-const element = /*#__PURE__*/React.createElement("ul", {
-  style: {
-    'color': 'blue',
-    'fontSize': '24px'
-  }
-}, /*#__PURE__*/React.createElement("li", null, sally), /*#__PURE__*/React.createElement("li", null, mark), /*#__PURE__*/React.createElement("li", null, holly), /*#__PURE__*/React.createElement("li", null, amol));
-ReactDOM.render(element, document.getElementById('content'));
+import EmployeeList from './EmployeeList.js';
+ReactDOM.render( /*#__PURE__*/React.createElement(React.StrictMode, null, /*#__PURE__*/React.createElement(EmployeeList, null)), document.getElementById('content'));
